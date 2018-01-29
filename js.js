@@ -8,19 +8,22 @@ var cube = $('<div class="qubis" />');
 
 // klikaj przycisk
 
-$('#push').click(makeGrid);
+$('input[type=submit]').click(makeGrid);
 
-var height = 10
+var height = $('#inputHeight');
 
-var width = 15
+var width = $('#inputWeight');
 
 
 function makeGrid() {
-    for (var x = 0; x < 10; x++) {
-    for (var y = 0; y < 10; y++) {
+    for (var x = 0; x < height.val(); x++) {
+    for (var y = 0; y < width.val(); y++) {
         $cube = $('<div class="qubis" />');
         $('#grido').append($cube);
     }
     $('#grido').last().append('<br>');
 };
 }
+$('form').submit(function(event) {
+    event.preventDefault();
+})
