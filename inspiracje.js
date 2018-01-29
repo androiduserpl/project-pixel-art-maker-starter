@@ -7,3 +7,5 @@ $('#input').on('change', function() {
     header = $('.articles h1').text(val);
     
 });
+
+ 
