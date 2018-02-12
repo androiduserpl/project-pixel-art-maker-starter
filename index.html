@@ -18,8 +18,20 @@
         <input type="submit">
     </form>
 
-    <h2>Pick A Color</h2>
-    <input type="color" id="colorPicker">
+    <div id="setings">
+        <div id="pixelColor">
+            <label for="colorPicker">Pick a color</label>
+            <input type="color" id="colorPicker">
+        </div>
+        <div id="backColor">
+            <label for="backgroundColor">Backgound color</label>
+            <input type="color" id="backgroundColor" value="#ffffff">
+        </div>
+        <div id="brColor">
+            <label for="backgroundColor">Border color</label>
+            <input type="color" id="borderColor" value="#5d5d5d">
+        </div>
+    </div>
 
     <h2>Design Canvas</h2>
     <table id="pixelCanvas"></table>

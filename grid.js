@@ -7,6 +7,7 @@
 /* some virabe */
 var table = $('#pixelCanvas');
 var colorPicker = $('#colorPicker');
+var backgroundColor = $('#backgroundColor');
 
 /* size of the grid */
 
@@ -40,7 +41,8 @@ table.on("click", "td", function () {
 });
 /* erase color from the single squere */
 table.on("dblclick", "td", function () {
-    $(this).css("background-color", "#fff");
+    $(this).css("background-color", backgroundColor.val());
 });
 
-
+/* color options */
+$('td').css("background-color", backgroundColor.val());
