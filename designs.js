@@ -22,13 +22,12 @@ var height = $('#inputHeight').on('change', function() {
     vall = $('#inputHeight').val();
     var header;
     header = $('.inputHeight').val(vall);
-    return vall;
 });
 
 var weight = $('#inputWeight').val();
 
 /* tworzenie siatki*/
-for (var x = 0; x < 10  ; x++) {
+for (var x = 0; x < height  ; x++) {
     for (var y = 0; y < 10; y++) {
         $qubis = $('<div class="qubis" id="x" />');
         $('#grido').append($qubis);
