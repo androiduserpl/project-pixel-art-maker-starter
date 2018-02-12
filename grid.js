@@ -8,6 +8,7 @@
 var table = $('#pixelCanvas');
 var colorPicker = $('#colorPicker');
 var backgroundColor = $('#backgroundColor');
+var borderColor = $('#borderColor');
 
 /* size of the grid */
 
@@ -45,4 +46,7 @@ table.on("dblclick", "td", function () {
 });
 
 /* color options */
+backgroundColor.change( function() {
+    $('td').css("background-color", backgroundColor.val());
+});
 $('td').css("background-color", backgroundColor.val());
